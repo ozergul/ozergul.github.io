@@ -21,7 +21,7 @@ author:
   info:
 
 url: https://ozergul.github.io/
-baseurl: "/blog"
+baseurl: "/"
 
 # language attribute in <html> element.
 lang: en
