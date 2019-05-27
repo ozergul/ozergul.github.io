@@ -11,10 +11,10 @@ description:
   subtitle: Yet another front-end developer, from Istanbul.
 
 author:
-  name: Özer Gül # Change this!
+  name: Özer Gül
 
   # Necessary for contact page
-  email: ozergul@yandex.com # Change this!
+  email: ozergul@yandex.com
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
