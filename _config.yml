@@ -42,7 +42,6 @@ theme-color-attr: "#00f0ff"
 # Color of Microsoft live Tile.
 ms-tile-color: "#00f0ff"
 
-# Color used throughout the theme. Format: R, G, B.
 theme-color: 0, 240, 255 # Original: 0, 240, 255
 
 # Text color used throughout the theme. Format: R, G, B.
