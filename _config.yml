@@ -15,7 +15,7 @@ minima:
   social_links:
     twitter: ozergul1
     github:  ozergul
-    rss: rss
+    # rss: rss
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
