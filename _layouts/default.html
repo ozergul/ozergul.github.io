@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
-<head>
-	{% include head.html %}
-</head>
-<body>
-	<div class="wrap">
-		{% include header.html %}
-		{{ content }}
-	  <script>
-	    $("article").fitVids();
-	    $('article p').each(function(i){
-				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
-					$(this).addClass('img-only');
-				}
-				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
-					$(this).addClass('img-only-source');
-				}
-	  	});
-	  </script>
-	</div>
-	{% include footer.html %}
-</body>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
 </html>
