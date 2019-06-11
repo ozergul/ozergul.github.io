@@ -70,7 +70,6 @@ Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-c
 Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir örnek mevcut.
 
 
-
 ### <ng-content>
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
 
