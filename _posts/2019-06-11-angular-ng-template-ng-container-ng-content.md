@@ -21,7 +21,7 @@ HTML'de template'ler siz çağırmadıkça, kullanmadıkça sayfada görünmezle
 Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekleşmedikçe sayfada görünmezler, tıpkı HTML'deki `<template>` etiketi gibi. Fakat `<template>` etiketinin DOM'da görünürken, `<ng-template>` lazım olmadıkça DOM'a yansımaz.
 
 `<ng-template>` için Basit bir örnek vermek gerekirse:
-```
+``` html
 <ng-template>
    Burası bir Template'dir.
 </ng-template>
@@ -29,14 +29,14 @@ Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekle
 Yukarıdaki template Angular tarafından DOM'a basılmayacaktır.
 
 Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, oluşturmuş olduğumuz Template'in benzersiz idsi olarak görev alır. Bu örnekte `*ngTemplateOutlet` directive'i tarafından sayfa basılır:
-
+``` html
     <ng-template #tmpl1>
        Burası bir Template'dir.
     </ng-template>
     <ng-container *ngTemplateOutlet="tmpl1"></ng-container>
-
-`<ng-template>`'in Loading gösterme amaçlı kullanılmasına bazı projelerde denk gelebilirsiniz:
 ```
+`<ng-template>`'in Loading gösterme amaçlı kullanılmasına bazı projelerde denk gelebilirsiniz:
+``` html
 <div class="items" *ngIf="items else loading">
   ...
 </div>
@@ -50,13 +50,13 @@ Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, 
 ### <ng-container>
 
 Az önce bahsettiğimiz `ng-template` sayfaya koşul gerçekleştiğinde yansımasına rağmen `ng-container` her daim sayfaya basılır, sayfaya basmak için herhangi bir koşula gerek yoktur. Fakat DOM'a ekstra bir düğüm eklemeden sadece kendi içeriğini sayfaya basar. (React'taki `<React.Fragment>` gibi.)
-```
+``` html
 <ng-container>
     Bu yazısı sayfaya basılacaktır.
 </ng-container>
 ```
 Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-container`'ı anlamak için gayet güzel olacak:
-```
+``` html
 <table>
   <tbody>
     <ng-container *ngFor="let item of items">
@@ -68,6 +68,8 @@ Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-c
 </table>
 ```
 Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir örnek mevcut.
+
+[https://stackblitz.com/edit/angular-kgesdb](https://stackblitz.com/edit/angular-kgesdb)
 
 <iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html"></iframe>  
 
@@ -90,13 +92,13 @@ export  class  TopComponent  {
 }
 ```
 Gerekli component'i module dosyanıza import edip kullanmak isterseniz kullanım şu şekilde olacak:
-```
+``` html
 <top-component>
 Bu yazılar wrapper içinde görünecektir.
 </top-component>
 ```
 DOM'daki çıktısı şu şekilde olacaktır:
-```
+``` html
 <div class="wrapper">
 Bu yazılar wrapper içinde görünecektir.
 </div>
