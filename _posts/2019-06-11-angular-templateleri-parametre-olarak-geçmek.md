@@ -76,7 +76,7 @@ Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir 
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
 
 top.component.ts:
-```
+``` typescript
 import  {  Component,Input,TemplateRef  }  from  '@angular/core';
 @Component({
   selector:  'top-component',
