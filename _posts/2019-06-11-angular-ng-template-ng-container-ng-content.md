@@ -9,7 +9,7 @@ Merhaba.
 
 Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek isityorum.
 
-### <ng-template>
+### ng-template
 
 `<ng-template>` HTML'deki `<template>` elemanına benzer. 
  
@@ -47,7 +47,7 @@ Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, 
 ```
 `loading` değişkeni dolu olduğu an `<ng-template #loading>` sayfaya basılacaktır.
 
-### <ng-container>
+### ng-container
 
 Az önce bahsettiğimiz `ng-template` sayfaya koşul gerçekleştiğinde yansımasına rağmen `ng-container` her daim sayfaya basılır, sayfaya basmak için herhangi bir koşula gerek yoktur. Fakat DOM'a ekstra bir düğüm eklemeden sadece kendi içeriğini sayfaya basar. (React'taki `<React.Fragment>` gibi.)
 ``` html
@@ -73,7 +73,7 @@ Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir 
 
 <iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html" style="width: 100%; height: 500px"></iframe>  
 
-### <ng-content>
+### ng-content
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
 
 top.component.ts:
