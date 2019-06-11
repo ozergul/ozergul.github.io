@@ -69,7 +69,6 @@ Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-c
 ```
 Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir örnek mevcut.
 
-<iframe src="https://stackblitz.com/edit/angular?embed=1"></iframe>
 
 
 ### <ng-content>
