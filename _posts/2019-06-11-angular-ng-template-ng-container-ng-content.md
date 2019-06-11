@@ -71,7 +71,7 @@ Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir 
 
 [https://stackblitz.com/edit/angular-kgesdb](https://stackblitz.com/edit/angular-kgesdb)
 
-<iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html"></iframe>  
+<iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html" style="width: 100%; height: 500px"></iframe>  
 
 ### <ng-content>
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
