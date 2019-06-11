@@ -11,14 +11,16 @@ Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahse
 
 ### ng-template
 
-`<ng-template>` HTML'deki `<template>` elemanına benzer. 
+`<ng-template>`, Component'ler gibi yeniden kullanılabilir şablonlar oluşturmamızı sağlar.
+
+Ayrıca `<ng-template>` HTML'deki `<template>` elemanına benzer. 
  
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)'deki `<template>` etiketinin tanımı şu şekilde:
 
 > The **HTML Content Template (`<template>`) element** is a mechanism for holding [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML "HTML: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.") that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.
 
 HTML'de template'ler siz çağırmadıkça, kullanmadıkça sayfada görünmezler fakat DOM'a yansırlar.
-Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekleşmedikçe sayfada görünmezler, tıpkı HTML'deki `<template>` etiketi gibi. Fakat `<template>` etiketinin DOM'da görünürken, `<ng-template>` lazım olmadıkça DOM'a yansımaz.
+Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekleşmedikçe sayfada görünmezler, tıpkı HTML'deki `<template>` etiketi gibi. Fakat `<template>` etiketi DOM'da görünürken, `<ng-template>` lazım olmadıkça DOM'a yansımaz.
 
 `<ng-template>` için Basit bir örnek vermek gerekirse:
 ``` html
