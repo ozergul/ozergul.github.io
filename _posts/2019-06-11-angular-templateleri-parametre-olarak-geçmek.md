@@ -2,14 +2,14 @@
 
 layout:  post
 title:  Angular <ng-template>, <ng-container> ve <ng-content> nedir?
-
+categories: Angular
 ---
 
 Merhaba.
 
 Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek isityorum.
 
-### ng-template
+### <ng-template>
 
 `<ng-template>` HTML'deki `<template>` elemanına benzer. 
  
@@ -47,7 +47,7 @@ Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, 
 ```
 `loading` değişkeni dolu olduğu an `<ng-template #loading>` sayfaya basılacaktır.
 
-### ng-container
+### <ng-container>
 
 Az önce bahsettiğimiz `ng-template` sayfaya koşul gerçekleştiğinde yansımasına rağmen `ng-container` her daim sayfaya basılır, sayfaya basmak için herhangi bir koşula gerek yoktur. Fakat DOM'a ekstra bir düğüm eklemeden sadece kendi içeriğini sayfaya basar. (React'taki `<React.Fragment>` gibi.)
 ```
@@ -67,7 +67,12 @@ Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-c
   </tbody>
 </table>
 ```
-### ng-content
+Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir örnek mevcut.
+
+<iframe src="https://stackblitz.com/edit/angular?embed=1"></iframe>
+
+
+### <ng-content>
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
 
 top.component.ts:
@@ -98,3 +103,8 @@ Bu yazılar wrapper içinde görünecektir.
 </div>
 ```
 Şimdilik bu kadar, görüşmek üzere :)
+
+Kaynaklar:
+[http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent](http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent)
+[https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
+[https://angular.io/api/common/NgTemplateOutlet#description](https://angular.io/api/common/NgTemplateOutlet#description)
