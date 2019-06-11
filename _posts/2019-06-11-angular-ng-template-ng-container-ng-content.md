@@ -69,6 +69,7 @@ Aşağıdaki örnek, `items` değişkeninin dolu olduğunu düşünürsek, `ng-c
 ```
 Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir örnek mevcut.
 
+<iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html"></iframe>  
 
 ### <ng-content>
 Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
@@ -103,6 +104,7 @@ Bu yazılar wrapper içinde görünecektir.
 Şimdilik bu kadar, görüşmek üzere :)
 
 Kaynaklar:
+
 [http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent](http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent)
 
 [https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
