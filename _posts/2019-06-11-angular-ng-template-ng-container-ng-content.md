@@ -1,7 +1,7 @@
 ---
 
 layout:  post
-title:  Angular <ng-template>, <ng-container> ve <ng-content> nedir?
+title:  Angular ng-template, ng-container ve ng-content nedir?
 categories: Angular
 ---
 
@@ -104,5 +104,7 @@ Bu yazılar wrapper içinde görünecektir.
 
 Kaynaklar:
 [http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent](http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent)
+
 [https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
+
 [https://angular.io/api/common/NgTemplateOutlet#description](https://angular.io/api/common/NgTemplateOutlet#description)
