@@ -81,9 +81,9 @@ lang: en-GB # Set the site language
 title: "Front-end blog" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Yet another front-end developer from Istanbul" 
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+url: "https://ozergul.net" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
+repo: "https://github.com/ozergul/ozergul.github.io"
 email: "ozergul@yandex.com"
 disqus: "ozergul" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # google_analytics: ''
@@ -113,7 +113,7 @@ navigation_header:
   url: /search/
 navigation_footer:
 - title: Created by David Darnes, Edited by Ozer Gul
-  url: https://darn.es
+  url: https://github.com/ozergul/ozergul.github.io
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/ozergul1
