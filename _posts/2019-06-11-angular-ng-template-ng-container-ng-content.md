@@ -1,8 +1,5 @@
 ---
-
-layout:  post
 title:  Angular ng-template, ng-container ve ng-content nedir?
-categories: Angular
 ---
 
 Merhaba.
