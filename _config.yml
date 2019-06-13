@@ -78,7 +78,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+title: "Front-end blog" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Yet another front-end developer from Istanbul" 
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
@@ -101,7 +101,6 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   180: '/assets/logos/logo@180px.png'
   512: '/assets/logos/logo@512px.png'
   1024: '/assets/logos/logo@1024px.png'
-
 # 9. Site navigation
 navigation_header:
 - title: Home
@@ -112,7 +111,7 @@ navigation_header:
   url: /categories/
 
 navigation_footer:
-- title: Created by David Darnes
+- title: Created by David Darnes ,Edited by Ozer Gul
   url: https://darn.es
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired

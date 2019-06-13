@@ -26,6 +26,10 @@ body {
   }
   .logo {
     @include flex(0 0 auto);
+    .text-logo {
+      color: #fff;
+      font-weight: bold;
+    }
   }
   .container {
     @include flexbox;
@@ -51,6 +55,11 @@ body {
     color: #fff;
   }
 
+  li.item--current, li:hover {
+    a {
+      color: $linkColour;
+    }
+  }
 }
 
 .feature {
@@ -356,14 +365,13 @@ button,
     display: none;
   }
   background: none;
-  color: $linkColour;
+  color: #fff;
   margin-bottom: 0;
   min-height: 4rem;
   min-width: 4rem;
   &:hover,
   &:focus {
     box-shadow: none;
-    color: $hoverColour;
   }
 }
 
@@ -478,10 +486,10 @@ pre code {
   a > code {
     text-shadow: none;
   }
-  ul {
+  ul:not(.list) {
     margin-left: 20px;
     li {
-      
+
     }
   }
   .button,
@@ -515,4 +523,9 @@ pre code {
     white-space: pre;
     overflow-x: auto;
   }
+}
+
+
+.article {
+  width: 100%;
 }

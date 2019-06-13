@@ -1,8 +1,11 @@
 ---
 title:  Angular ng-template, ng-container ve ng-content nedir?
+categories:
+- Angular
 excerpt: |
   Merhaba.
   Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek istiyorum.
+feature_image: "https://picsum.photos/2560/600?image=733"
 ---
 
 Merhaba.
