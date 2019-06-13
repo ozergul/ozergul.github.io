@@ -19,10 +19,10 @@ Ayrıca `<ng-template>` HTML'deki `<template>` elemanına benzer.
 
 > The **HTML Content Template (`<template>`) element** is a mechanism for holding [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML "HTML: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.") that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.
 
-HTML'de template'ler siz çağırmadıkça, kullanmadıkça sayfada görünmezler fakat DOM'a yansırlar.
-Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekleşmedikçe sayfada görünmezler, tıpkı HTML'deki `<template>` etiketi gibi. Fakat `<template>` etiketi DOM'da görünürken, `<ng-template>` lazım olmadıkça DOM'a yansımaz.
+HTML'de Template'ler siz çağırmadıkça, kullanmadıkça sayfada görünmezler fakat DOM'a yansırlar.
+Angular'da da, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekleşmedikçe sayfada görünmezler, tıpkı HTML'deki `<template>` etiketi gibi. Fakat `<template>` etiketi DOM'da görünürken, `<ng-template>` lazım olmadıkça DOM'a yansımaz.
 
-`<ng-template>` için Basit bir örnek vermek gerekirse:
+`<ng-template>` için basit bir örnek vermek gerekirse:
 ``` html
 <ng-template>
    Burası bir Template'dir.
@@ -30,7 +30,7 @@ Angular'da ise, Template'ler siz sayfaya çağırmadıkça veya koşul gerçekle
 ```
 Yukarıdaki template Angular tarafından DOM'a basılmayacaktır.
 
-Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, oluşturmuş olduğumuz Template'in benzersiz idsi olarak görev alır. Bu örnekte `*ngTemplateOutlet` directive'i tarafından sayfa basılır:
+Aşağıdaki örnekte ise `#tmpl1` aslında lokal bir değişkendir ama burada, oluşturmuş olduğumuz Template'in benzersiz id'si olarak görev alır. Bu örnekte `*ngTemplateOutlet` directive'i tarafından sayfaya basılır:
 ``` html
     <ng-template #tmpl1>
        Burası bir Template'dir.
@@ -76,7 +76,7 @@ Aşağıda`<ng-container>` ve `<ng-template>`'in kullanımı hakkında ufak bir 
 <iframe src="https://stackblitz.com/edit/angular-kgesdb?embed=1&file=src/app/app.component.html" style="width: 100%; height: 500px"></iframe>  
 
 ### ng-content
-Component'lerinizin içine component vs taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
+Component'lerinizin içine component, HTML element vb. taşımak için `<ng-content>` kullanılır. En basit örneğiyle:
 
 top.component.ts:
 ``` typescript
