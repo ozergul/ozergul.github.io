@@ -7,24 +7,23 @@ layout: default
 <main class="main  container">
 
   <div class="content">
+    <div class="padding-container">
+      <article class="article  article--page typeset">
+        {% if paginator.posts %}
+          {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+          <h1>{{ collectiondata.title }}</h1>
+          {{ collectiondata.description | markdownify }}
 
-    <article class="article  article--page  typeset">
+        {% else %}
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+          
+        {% endif %}
 
-      {% if paginator.posts %}
-        {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-        <h1>{{ collectiondata.title }}</h1>
-        {{ collectiondata.description | markdownify }}
+      </article>
 
-      {% else %}
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-        
-      {% endif %}
-
-    </article>
-
-    {% include post-list.html %}
-
+      {% include post-list.html %}
+    </div>
   </div>
 
   {% if page.aside == true %}{% include site-aside.html %}{% endif %}

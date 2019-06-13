@@ -1,6 +1,6 @@
 // Structural elements
 body {
-  background: $backgroundColour;
+  background: #F1F2F5;
   color: $bodyColour;
   height: 100%;
   display: flex;
@@ -10,10 +10,13 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
+.top-bar {
+  background: $purple;
+}
 
 // Header, feature and footer
 .header,
@@ -35,12 +38,19 @@ body {
   }
 }
 
+.header {
+  margin-bottom: 40px;
+}
 .header .nav {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
   justify-content: flex-end;
   overflow: hidden;
+  a {
+    color: #fff;
+  }
+
 }
 
 .feature {
@@ -127,6 +137,9 @@ body {
     @include justify-content(center);
     @include flex-direction(row);
   }
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .header,
@@ -135,10 +148,21 @@ body {
   @include flex(0, 0, auto);
 }
 
+.padding-container {
+  padding: 40px;
+}
 .content {
   @include breakpoint(break-1) {
-    width: 62%;
   }
+
+  .post-header {
+    background: #131231;
+    color: #fff;
+    h1 {
+      color: #fff;
+    }
+  }
+
 }
 
 .share .button {
@@ -386,12 +410,43 @@ label {
 }
 
 code {
-  padding: .12rem .2rem;
-  color: $headingColour;
+  padding: 3px 7px;
+  color: $linkColour;
+  background: #efefef;
+  box-shadow: 0 2px 0 rgba(84,94,111,.4);
+  border-radius: 5px;
+  vertical-align: middle;
+  font-family: "Dejavu Sans Mono, Menlo, Roboto Mono, monospace"
 }
 
+
+pre {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #282a36; 
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #131231;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #111; 
+  }
+}
 pre code {
   padding: 0;
+  color: inherit;
+  background: none;
+  box-shadow: none;
+  border: none;
 }
 
 .required {
@@ -423,6 +478,12 @@ pre code {
   a > code {
     text-shadow: none;
   }
+  ul {
+    margin-left: 20px;
+    li {
+      
+    }
+  }
   .button,
   button {
     background-image: none;
@@ -452,6 +513,6 @@ pre code {
   }
   pre {
     white-space: pre;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 }

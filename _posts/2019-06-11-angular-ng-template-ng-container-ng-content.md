@@ -1,17 +1,18 @@
 ---
 title:  Angular ng-template, ng-container ve ng-content nedir?
+excerpt: |
+  Merhaba.
+  Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek istiyorum.
 ---
 
 Merhaba.
-
-Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek isityorum.
+Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek istiyorum.
 
 ### ng-template
 
 `<ng-template>`, Component'ler gibi yeniden kullanılabilir şablonlar oluşturmamızı sağlar.
-
 Ayrıca `<ng-template>` HTML'deki `<template>` elemanına benzer. 
- 
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)'deki `<template>` etiketinin tanımı şu şekilde:
 
 > The **HTML Content Template (`<template>`) element** is a mechanism for holding [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML "HTML: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.") that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.
@@ -105,9 +106,6 @@ Bu yazılar wrapper içinde görünecektir.
 Şimdilik bu kadar, görüşmek üzere :)
 
 Kaynaklar:
-
-[http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent](http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent)
-
-[https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
-
-[https://angular.io/api/common/NgTemplateOutlet#description](https://angular.io/api/common/NgTemplateOutlet#description)
+- [http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent](http://nataliesmith.ca/blog/ngtemplate-ngcontainer-ngcontent)
+- [https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
+- [https://angular.io/api/common/NgTemplateOutlet#description](https://angular.io/api/common/NgTemplateOutlet#description)
