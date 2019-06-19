@@ -23,7 +23,9 @@
 
     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
     <meta name="theme-color" content="#451771"/>
+
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    
     {% if site.css_inline == true %}
       {% include site-styles.html %}
     {% else %}
@@ -35,6 +37,7 @@
     {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
     {% include site-before-start.html %}
+    <link rel="stylesheet" href="{{ "/scripts/lazysizesçmin.js" | relative_url }}">
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
