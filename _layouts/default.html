@@ -37,7 +37,7 @@
     {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
     {% include site-before-start.html %}
-    <link rel="stylesheet" href="{{ "/scripts/lazysizes.min.js" | relative_url }}">
+    <script type="javascript" src="{{ "/scripts/lazysizes.min.js" | relative_url }}"></script>
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
