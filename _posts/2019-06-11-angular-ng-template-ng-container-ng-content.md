@@ -9,7 +9,7 @@ feature_image: "https://picsum.photos/2560/600?image=733"
 ---
 
 Merhaba.
-Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek istiyorum.
+Bu yazıda sizlere `<ng-template>`, `<ng-container>` ve `<ng-content>` ten bahsetmek istiyorum. Angular'ın şuan en güncel olan 8 versiyonundayım.
 
 ### ng-template
 
