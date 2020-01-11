@@ -4,6 +4,7 @@ feature_text: |
   Yet another front-end developer from Istanbul.
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Yet another front-end developer from Istanbul."
+layout: page
 ---
 ## About me
 Versatile Front-end Developer with 5+ years of experience designing, developing, and managing complex sites and internal frameworks. Specializes SCSS and responsive design. Also experienced database systems like Mysql, Mongodb with PHP, Nodejs. And I am improving myself in javascript frameworks like Angular, React and Vue. 
