@@ -17,7 +17,7 @@ public class Dragger : MonoBehaviour, IDragHandler
 }
 ```
 
-Item'ı sürükler iken biraz yumuşak olmasını istiyorum. O yüzden ``Vector2.SmoothDamp`` ile, tıkladığımız position olan Input.mousePosition değerini maxSpped değeri ile sınırlayacağız.
+Item'ı sürükler iken biraz yumuşak olmasını istiyorum. O yüzden ``Vector2.SmoothDamp`` ile, tıkladığımız position olan Input.mousePosition değerini smoothTime değeri ile sınırlayacağız.
 
 ``` csharp
 public float smoothTime = 0.1f;  
