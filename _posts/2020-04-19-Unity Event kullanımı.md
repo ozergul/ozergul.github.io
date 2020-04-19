@@ -1,3 +1,9 @@
+title:  Unity event kullanımı
+categories:
+- Unity
+feature_image: "https://i.imgur.com/fO6A3ST.jpg"
+---
+
 Merhaba arkadaşlar. Bugünkü yazımda sizlere Unity'nin faydalı bir özelliğinden bahsedeceğim: [UnityEvent](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)
 
 UnityEvent'i JavaScript'teki callback functionlara benzetiyorum ben. Genelde oyunlarda kurgulanan bir olay sonrası bir action fire etmek için kullanırım. Örneğin generic sayılabilecek bir Dragger scriptimiz olsun. Bu scriptin görevi de şu olsun: 2D item'ı sürüklenebilir yap ve hedef trigger ile etkileşime geçtiğinde doğru cevap penceresini aç.
