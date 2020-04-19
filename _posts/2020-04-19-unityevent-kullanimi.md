@@ -1,5 +1,5 @@
 ---
-title:  Unity event kullanımı
+title:  UnityEvent kullanımı
 categories:
 - Unity
 feature_image: "https://i.imgur.com/MjMhiZO.jpg"
