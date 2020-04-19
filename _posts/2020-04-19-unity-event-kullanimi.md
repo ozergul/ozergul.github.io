@@ -2,7 +2,7 @@
 title:  Unity event kullanımı
 categories:
 - Unity
-feature_image: "https://i.imgur.com/fO6A3ST.jpg"
+feature_image: "https://i.imgur.com/MjMhiZO.jpg"
 ---
 
 Merhaba arkadaşlar. Bugünkü yazımda sizlere Unity'nin faydalı bir özelliğinden bahsedeceğim: [UnityEvent](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)
