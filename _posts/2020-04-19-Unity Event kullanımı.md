@@ -1,5 +1,3 @@
-# Welcome to StackEdit!
-
 Merhaba arkadaşlar. Bugünkü yazımda sizlere Unity'nin faydalı bir özelliğinden bahsedeceğim: [UnityEvent](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)
 
 UnityEvent'i JavaScript'teki callback functionlara benzetiyorum ben. Genelde oyunlarda kurgulanan bir olay sonrası bir action fire etmek için kullanırım. Örneğin generic sayılabilecek bir Dragger scriptimiz olsun. Bu scriptin görevi de şu olsun: 2D item'ı sürüklenebilir yap ve hedef trigger ile etkileşime geçtiğinde hedefi yok et.
