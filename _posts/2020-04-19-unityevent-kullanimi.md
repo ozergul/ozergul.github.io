@@ -40,7 +40,7 @@ public void OnDrag(PointerEventData eventData)  {
 }
 
 ```
-OnTriggerEnter2D methodunda ise, trigger olan game objesi ile bizim inspector'de verdiğimiz hedef game objesinin name'i aynı mı kıyaslaıyoruz. If koşulunun içine girdiğinde setlediğimiz olduğumuz unity eventi invoke metodu ile çalıştırılacak. Metodun olmaması hata fırlatmaz.
+OnTriggerEnter2D methodunda ise, trigger olan game objesi ile bizim inspector'de verdiğimiz hedef game objesinin name'i aynı mı kıyaslaıyoruz. If koşulunun içine girdiğinde inspectorden setlemiş olduğumuz UnityEvent'i invoke metodu ile çalıştırılacak. Metodun olmaması hata fırlatmaz.
 
 ``` csharp
 public GameObject target;
@@ -87,7 +87,7 @@ public class Dragger : MonoBehaviour, IDragHandler
 }
 ```
 
-Inspector'de After Collide kısmına artık trigger sonrası çalışmasını istediğiniz fonksiyonu sürükleyebilirsiniz.
+Inspector'de After Trigger kısmına artık trigger sonrası çalışmasını istediğiniz fonksiyonu sürükleyebilirsiniz.
 
 ![](https://i.imgur.com/70lMgNT.png)
 
