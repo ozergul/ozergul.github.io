@@ -111,6 +111,9 @@ kbd {
 // Image
 img {
   max-width: 100%;
+  // Without this an image carrying width/height attributes keeps its intrinsic
+  // height while max-width shrinks the width, and the picture stretches.
+  height: auto;
   vertical-align: middle;
   -webkit-user-drag: none;
   margin: 0 auto;
