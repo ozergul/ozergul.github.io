@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "I parsed the Apollo 11 flight software and found the landing equation in its own comments"
-date:   2026-08-30 00:30:00
+date:   2026-08-29 12:00:00
 categories: apollo
 ---
 
